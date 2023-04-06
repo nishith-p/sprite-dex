@@ -1,0 +1,32 @@
+"use client";
+
+import React, { useState } from "react";
+import { signOut } from "next-auth/react";
+
+import Button from "@/ui/Button";
+
+interface SignOutButtonProps {}
+
+const SignOutButton = (props: SignOutButtonProps) => {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  const signUserOut = async () => {
+    setIsLoading(true);
+    try {
+      await signOut();
+    } catch (error) {
+      //   toast({
+      //     title: "Error signing out",
+      //     message: "Please try again later",
+      //     type: "error",
+      //   });
+    }
+  };
+  return (
+    <Button onClick={signUserOut} isLoading={isLoading}>
+      Sign in
+    </Button>
+  );
+};
+
+export default SignOutButton;

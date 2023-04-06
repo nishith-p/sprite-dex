@@ -29,10 +29,10 @@
         "./src/lib/*"
       ],
       "@/components/*": [
-        "./src/app/components/*"
+        "./src/components/*"
       ],
       "@/ui/*": [
-        "./src/app/components/ui/*"
+        "./src/components/ui/*"
       ]
     },
     "plugins": [
