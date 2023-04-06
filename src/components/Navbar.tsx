@@ -2,15 +2,16 @@ import React from "react";
 import Link from "next/link";
 import { getServerSession } from "next-auth";
 
-import { buttonVariants } from "@/ui/Button";
 import SignInButton from "@/components/SignInButton";
 import SignOutButton from "@/components/SignOutButton";
 import ThemeToggle from "@/components/ThemeToggle";
+import { buttonVariants } from "@/ui/Button";
+import { authOptions } from "@/lib/auth";
 
 interface NavbarProps {}
 
 const Navbar = async (props: NavbarProps) => {
-  const session = await getServerSession();
+  const session = await getServerSession(authOptions);
 
   return (
     <div className="fixed backdrop-blur-sm bg-white/75 dark:bg-slate-900 z-50 top-0 left-0 right-0 h-20 border-b border-slate-300 dark:border-slate-700 shadow-sm flex items-center justify-between">
