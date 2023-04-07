@@ -8,9 +8,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import { buttonVariants } from "@/ui/Button";
 import { authOptions } from "@/lib/auth";
 
-interface NavbarProps {}
-
-const Navbar = async (props: NavbarProps) => {
+const Navbar = async () => {
   const session = await getServerSession(authOptions);
 
   return (

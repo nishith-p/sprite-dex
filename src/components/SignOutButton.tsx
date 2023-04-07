@@ -25,7 +25,7 @@ const SignOutButton = (props: SignOutButtonProps) => {
   };
   return (
     <Button onClick={signUserOut} isLoading={isLoading}>
-      Sign in
+      Sign out
     </Button>
   );
 };
