@@ -2,10 +2,9 @@ export const nodejs = `const axios = require("axios");
 
 const options = {
     method: 'POST',
-    url: 'https://similarityapi.com/api/v1/similarity',
+    url: 'https://${window.location.hostname}/api/v1/sprites',
     params: {
-      text1: 'First text',
-      text2: 'Second text'
+      pokemonName: 'pikachu'
     },
     headers: {
       'Authorization': 'YOUR_API_KEY',
@@ -20,18 +19,16 @@ axios.request(options).then(function (response) {
 
 export const python = `import requests
 
-url = 'https://similarityapi.com/api/v1/similarity'
+url = 'https://${window.location.hostname}/api/v1/sprites'
 api_key = 'YOUR_API_KEY'
-text1 = 'First text'
-text2 = 'Second text'
+pokemonName: 'pikachu'
 
 headers = {
     'Authorization': api_key
 }
 
 payload = {
-    'text1': text1,
-    'text2': text2
+  pokemonName: 'pikachu'
 }
 
 response = requests.post(url, headers=headers, json=payload)
