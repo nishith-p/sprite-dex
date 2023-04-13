@@ -5,8 +5,8 @@ import Heading from "@/ui/Heading";
 import Paragraph from "@/components/ui/Paragraph";
 
 export const metadata: Metadata = {
-  title: "nxt-txt | Home",
-  description: "Text similarity checker app created using Next.js 13",
+  title: "nxt-mon | Home",
+  description: "Pokémon sprite fetching app created using Next.js 13",
 };
 
 export default function Home() {
@@ -18,13 +18,13 @@ export default function Home() {
             size="lg"
             className="three-d text-black dark:text-light-gold"
           >
-            Text Similarity.
+            Pokémon Sprites.
             <br />
             Made with Next 13.
           </Heading>
 
           <Paragraph className="max-w-xl lg:text-left">
-            A simple text similarity checking API created to test out Next.js 13
+            A simple Pokémon sprite fetching API created to test out Next.js 13
             functionalities. Get started with a free{" "}
             <Link
               href="/login"

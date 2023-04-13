@@ -9,8 +9,8 @@ import ApiDashboard from "@/components/ApiDashboard";
 import RequestKey from "@/components/RequestKey";
 
 export const metadata: Metadata = {
-  title: "nxt-txt | Dashboard",
-  description: "Dashboard of the nxt-txt web application",
+  title: "nxt-mon | Dashboard",
+  description: "Dashboard of the nxt-mon web application",
 };
 
 const page = async () => {
