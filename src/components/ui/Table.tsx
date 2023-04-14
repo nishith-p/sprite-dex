@@ -90,16 +90,16 @@ const Table = ({ userRequests }: TableProps) => {
     <ThemeProvider theme={theme}>
       <DataGrid
         style={{
-          backgroundColor: appTheme === "light" ? "white" : "#152238",
+          backgroundColor: appTheme === "light" ? "white" : "#27272a",
           fontSize: "1rem",
         }}
-        pageSizeOptions={[5]}
+        pageSizeOptions={[8]}
         disableRowSelectionOnClick
         autoHeight
         initialState={{
           pagination: {
             paginationModel: {
-              pageSize: 5,
+              pageSize: 8,
             },
           },
           sorting: {

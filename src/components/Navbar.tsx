@@ -12,10 +12,11 @@ const Navbar = async () => {
   const session = await getServerSession(authOptions);
 
   return (
-    <div className="fixed backdrop-blur-sm bg-white/75 dark:bg-slate-900 z-50 top-0 left-0 right-0 h-20 border-b border-slate-300 dark:border-slate-700 shadow-sm flex items-center justify-between">
-      <div className="container max-w-7xl mx-auto w-full flex justify-between items-center">
-        <Link href="/" className={buttonVariants({ variant: "link" })}>
-          nxt-mon
+    // border-b border-slate-300 dark:border-zinc-700 shadow-sm
+    <div className="fixed backdrop-blur-sm bg-white-75 dark:bg-zinc-900 z-50 top-0 left-0 right-0 h-20 flex items-center justify-between">
+      <div className="container w-full flex justify-between items-center mx-0 max-w-none">
+        <Link href="/" className="text-slate-900 dark:text-slate-100">
+          sprite-dex
         </Link>
 
         <div className="md:hidden">
