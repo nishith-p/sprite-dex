@@ -1,6 +1,6 @@
-# SpriteDex
+# SpriteDex 🚀
 
-A simple Pokémon sprite fetching API service built to test out Next.js 13 functionalities.
+A simple Pokémon sprite fetching API service built to test out Next.js 13 functionalities. You can view the demo [here](https://sprite-dex.vercel.app/).
 
 ## Features
 
@@ -17,3 +17,4 @@ A simple Pokémon sprite fetching API service built to test out Next.js 13 funct
 - Prisma (ORM)
 - MySQL (DB using PlanetScale)
 - Tailwind, RadixUI (Styling)
+- Vercel (Deployment)
