@@ -20,7 +20,7 @@ export default function RootLayout({
       lang="en"
       className={cn("bg-white text-slate-900 antialiased", inter.className)}
     >
-      <body className="min-h-screen bg-slate-50 dark:bg-slate-900 antialiased">
+      <body className="min-h-screen bg-slate-50 dark:bg-zinc-900 antialiased">
         <Providers>
           <Toaster position="bottom-right" />
           {/* @ts-expect-error */}
@@ -29,7 +29,7 @@ export default function RootLayout({
         </Providers>
 
         {/* For mobile devices */}
-        <div className="h-40 md:hidden" />
+        {/* <div className="h-40 md:hidden" /> */}
       </body>
     </html>
   );
