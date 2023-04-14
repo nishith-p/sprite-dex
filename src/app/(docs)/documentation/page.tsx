@@ -7,7 +7,7 @@ import DocumentationTabs from "@/components/DocumentationTabs";
 
 import "simplebar-react/dist/simplebar.min.css";
 
-export const metaData: Metadata = {
+export const metadata: Metadata = {
   title: "sprite-dex | Documentation",
   description:
     "Documentation of the Pokemon stripe fetching app created using Next.js 13",
