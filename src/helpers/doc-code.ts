@@ -2,7 +2,7 @@ export const nodejs = `const axios = require("axios");
 
 const options = {
     method: 'POST',
-    url: 'https://${window.location.hostname}/api/v1/sprites',
+    url: 'https://localhost:3000/api/v1/sprites',
     params: {
       pokemonName: 'pikachu'
     },
@@ -19,7 +19,7 @@ axios.request(options).then(function (response) {
 
 export const python = `import requests
 
-url = 'https://${window.location.hostname}/api/v1/sprites'
+url = 'https://localhost:3000/api/v1/sprites'
 api_key = 'YOUR_API_KEY'
 pokemonName: 'pikachu'
 
