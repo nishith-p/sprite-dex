@@ -5,9 +5,9 @@ import { formatDistance } from "date-fns";
 
 import { authOptions } from "@/lib/auth";
 import { db } from "@/lib/db";
+import { Input } from "@/ui/Input";
 import Heading from "@/ui/Heading";
 import Paragraph from "@/ui/Paragraph";
-import { Input } from "@/ui/Input";
 import Table from "@/ui/Table";
 import ApiKeyOptions from "./ApiKeyOptions";
 
@@ -41,7 +41,7 @@ const ApiDashboard = async () => {
     <div className="container flex flex-col gap-6">
       <Heading>Welcome back, {user.user.name}</Heading>
       <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start items-center">
-        <Paragraph>Your API key:</Paragraph>
+        <Paragraph className="mt-2">Your API key:</Paragraph>
         <Input className="w-fit truncate" readOnly value={activeApiKey.key} />
         <ApiKeyOptions
           apiKeyId={activeApiKey.id}
